@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Activite2</title>
+     <link rel="icon" href="../images/icon.png">
+     <style>
+          *{
+               padding: 0;
+               margin: 0;
+               font-family: sans-serif;
+          }
+          .head{
+               background-color: #8ab5cd;
+               height: 100px;
+          }
+          .head>h1,p{
+               width: 100%;
+               text-align: center;
+          }
+          .head>p{
+               font-weight: 600;
+          }
+          a{
+               color: #000;
+               font-weight: bold;
+          }
+          .form{
+               background-color: #efefef;
+               height: 360px;
+          }
+          #Slider{
+               width: 45%;
+          }
+          #submit{
+               height: 100%;
+               width: 100px;
+          }
+          .bottom{
+               background-color: #c4c4c4;
+               height: 150px;
+               padding: 20px;
+          }
+          .bottom>p{
+               text-align: left;
+               line-height: 25px;
+          }
+          .bottom>p+p{
+               text-align:end;
+          }
+          .bottom>a{
+               text-align: right; 
+          }
+          body{
+               height: 650px;
+          }
+          form{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100%;
+          }
+          table{
+               border-collapse:collapse;
+               border-spacing:50px;
+               height: 80%;
+               width: 60%;
+          }
+          td{
+               text-align: right;
+               padding:0 5px ;
+               
+          }
+          td+td{
+               text-align: left;
+          }
+          span{
+               font-weight: bold;
+               text-decoration: underline;
+          }
+     </style>
+</head>
+<body>
+     
+     <div class="head">
+          <h1 style="font-size: 40px; font-weight: bolder; padding-top: 5px;"><b>Cross-browser HTML5 forms</b></h1>
+          <br>
+          <p>with <a href="">Webforms2</a>, <a href="">Modernizr</a>, <a href="">JQuery UI</a> and other JQuery Plugins.</p>
+     </div>
+     <div class="form">
+          <form action="" method="">
+          <table>
+               <tr>
+                    <td><label for="Slider" align="right">Slider</label></td>
+                    <td><input type="range" name="Slider" id="Slider" value="0"></td>
+               </tr>
+               <tr>
+                    <td><label for="Numeric">Numeric spinner</label></td>
+                    <td><input type="number" name="Numeric" id="Numeric" value="80"></td>
+               </tr>
+               <tr>
+                    <td><label for="Date">Date picker</label></td>
+                    <td><input type="datetime" name="Date" id="Date" value="2010-10-05"></td>
+               </tr>
+               <tr>
+                    <td><label for="color">Color picker</label></td>
+                    <td><input type="text" name="" id="" maxlength="6" value="ff0000"></td>
+               </tr>
+               <tr>
+                    <td ><label for="text">Text field with placeholder</label></td>
+                    <td><input type="text" name="text" id="text" placeholder="Instert vousr text here"></td>
+               </tr>
+               <tr>
+                    <td><label for="url">Url field</label></td>
+                    <td><input type="url" name="url" id="url" placeholder="http://net.tutsplus.com/"></td>
+               </tr>
+               <tr>
+                    <td><label for="email">Email field</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="contact@ghinda.net"></td>
+               </tr>
+               <tr>
+                    <td></td>
+                    <td><input id="submit" type="submit" value="Submit form"></td>
+               </tr>
+          </table>
+     </form>
+     </div>
+     <div class="bottom">
+          <p><span>Color Picker</span> plugin by<span> Stefan Petre</span> <br>Numeric spinner by <span>Brant Burnett</span> <br> Placehold by <span>Viqet Labs</span></p>
+          <p>Cross-browser HTML5 Forms by <span>Cristian Colceriu</span></p>
+          <p><a href="#">Twitter</a> - <a href="#">Email</a></p>
+     </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activet6</title>
+    <link rel="icon" href="../images/icon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin: 20px 10px;
+            height: 600px;
+        }
+        table{
+            width: 80%;
+            border-collapse: collapse;
+        }
+        td{
+            border:1px solid red;
+            text-align: center;
+            width: 70px;
+            height: 50px;
+        }
+        th{
+            width:15px;
+            border:1px solid red;
+            background-color: #484848;
+        }
+        .time>td{
+            height: 30px;
+        }
+        .vid{
+            background: gray;
+        }
+        .days,.time{
+            background-color: #8eb4e3;
+            font-weight: bold;
+            color: white;
+        }
+        h2{
+            font-family: georgia;
+            color: #4f6f9d;
+        }
+        p{
+            font-style: italic;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        .cas1,.cas2,.cas3,.cas5,.cas6{
+            width: 17%;
+        }
+        .jours{
+            writing-mode: vertical-lr;
+            text-orientation:upright;
+            background-color: #333;
+            width: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        h1{
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <!--block Horaines-->
+        <tr>
+            <td style="border-top: none;border-left: none;" colspan="2" rowspan="2"></td>
+            <td colspan="5" bgcolor="#333"><h1>Horaines</h1></td>
+        </tr>
+        <!--block Times-->
+        <tr class="time">
+            <td>8h-10h</td>
+            <td>10h-12h</td>
+            <th></th>
+            <td>14h-16h</td>
+            <td>16h-18h</td>
+        </tr>
+        <!-- block Lundi-->
+        <tr>
+            <td rowspan="6" class="jours"> <h1>JOURS</h1></td>
+            <td class="days cas1" ><h3>Lundi</h3></td>
+            <td class="cas2"><h2>Arabe</h2><p>Salle2-M. Yassine</p></td>
+            <td class="cas3"><h2>Maths</h2><p>Salle5 -M. Kassimi</p></td>
+            <th class="cas4"></th>
+            <td class="vid cas5"></td>
+            <td class="vid cas6"></td>
+        </tr>
+        <!--block Mardi-->
+        <tr>
+            <td class="days"><h3>Mardi</h3></td>
+            <td><h2>Musique</h2><p>Salle art -M. Adnane</p></td>
+            <td><h2>Informatique</h2><p>Salle cyber -M. Adli</p></td>
+            <th></th>
+            <td><h2>Physique</h2><p>Atelier phy -M. Bouz</p></td>
+            <td><h2>Anglis</h2><p>Salle2 -Mme hamd</p></td>
+        </tr>
+        <!--block Mercredi-->
+        <tr>
+            <td class="days"><h3>Mercredi</h3></td>
+            <td class="vid"></td>
+            <td><h2>Gestion</h2><p>Salle2 -Mme Ahidar</p></td>
+            <th></th>
+            <td colspan="2"><h2>Dessin</h2><p>Salle art -M. Mofrige</p></td>
+        </tr>
+        <!--block Jeudi-->
+        <tr>
+            <td class="days"><h3>Jeudi</h3></td>
+            <td><h2>Sciences</h2><p>Salle phy -M.Azami</p></td>
+            <td><h2>Français</h2><p>Salle2 -Mme bouraba</p></td>
+            <th></th>
+            <td><h2>Sport</h2><p>Cours 1 -M. Zaki</p></td>
+            <td><h2>Physique</h2><p>Atelier phy -M. Bouz</p></td>
+        </tr>
+        <!--block Vendredi-->
+        <tr>
+            <td class="days"><h3>Vendredi</h3></td>
+            <td colspan="2"><h2>Technologie</h2><p>Atelier phy -M. Bouz</p></td>
+            <th></th>
+            <td><h2>Anglis</h2><p>Salle 2 -Mme hamd</p></td>
+            <td class="vid"></td>
+        </tr>
+        <!--block Samedi-->
+        <tr>
+            <td class="days"><h3>Samedi</h3></td>
+            <td><h2>Maths</h2><p>Salle5 -M. Kassimi</p></td>
+            <td><h2>Français</h2><p>Salle2 -Mme bouraba</p></td>
+            <th></th>
+            <td class="vid"></td>
+            <td class="vid"></td>
+        </tr>
+    </table>
+</body>
+</html>

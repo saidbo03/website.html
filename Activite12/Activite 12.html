@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Activite 1</title>
+     <link rel="icon" href="../images/icon.png">
+     <style>
+          *{
+               margin: 5px 0;
+          }
+          body{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 500px;
+          }
+          form{
+               width: 50%;
+          }
+          table{
+               width: 100%;
+          }
+          table>tr>td{
+               width: 50%;
+          }
+          div{
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin-top: 10px;
+          }
+          div>input{
+               margin-left: 10px;
+          }
+     </style>
+</head>
+<body>
+     <form action="">
+     <fieldset>
+          <legend><mark>Client:</mark></legend>
+          <table>
+               <tr>
+                    <td>
+                         <label for="Civilité">Civilité</label>
+                    </td>
+                    <td>
+                         <input type="radio" name="Civilité" id="Civilité" >Mademoiselle
+                         <input type="radio" name="Civilité" id="Civilité">Madame
+                         <input type="radio" name="Civilité" id="Civilité" checked>Monsieur
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="">Nom/Prenom</label>
+                    </td>
+                    <td>
+                         <input type="text" name="Nom/Prenom" id="Nom/Prenom">
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="Adress">Adress</label>
+                    </td>
+                    <td>
+                         <textarea name="Adress" rows="3" id="Adress" placeholder="Rue No Boite postale"></textarea>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="postal">No postal/</label>
+                    </td>
+                    <td>
+                         <input type="number" name="postal" id="postal" maxlength="8">
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="Localité">Localité</label>
+                    </td>
+                    <td>
+                         <input type="text" name="Localité" id="Localité" value="Laussanne">
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="Pays">Pays</label>
+                    </td>
+                    <td>
+                         <select name="Pays" id="Pays">
+                              <option value="Brésil">Brésil</option>
+                              <option value="Canada">Canada</option>
+                              <option value="Chine">Chine</option>
+                              <option value="Maroc" selected >Maroc</option>
+                         </select>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="Plateformes">Plateforme(s)</label>
+                    </td>
+                    <td>
+                         <input type="checkbox" name="Plateforme1" id="Plateformes" checked>Windows
+                         <input type="checkbox" name="Plateforme2" id="Plateformes" checked>Macintoch
+                         <input type="checkbox" name="Plateforme3" id="Plateformes" >Unix
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="Appliction">Appliction</label>
+                    </td>
+                    <td>
+                         <select name="Appliction" id="Appliction" multiple >
+                              <option  value="Bureautique" selected>Bureautique</option>
+                              <option value="SGBD">SGBD</option>
+                              <option value="DAO">DAO</option>
+                              <option value="Internet" selected>Internet</option>
+                              <option value="Statistiques">Statistiques</option>
+                         </select>
+                    </td>
+               </tr>
+          </table>
+     </fieldset>
+     <div>
+     <input type="submit" value="Soumettre formulaire"><input type="reset" value="Effacer">
+</div>
+</form>
+</body>
+</html>
